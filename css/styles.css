@@ -28,6 +28,7 @@ img {
   --border: #e7e9fc;
   --background-icons: #f4f4fd;
   --companies-fill: #8e8f99;
+  --background-item-footer: #31d0aa;
 }
 
 body {
@@ -135,8 +136,8 @@ body {
   margin-right: auto;
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.4)
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero/people-office.jpg);
   background-repeat: no-repeat;
@@ -198,13 +199,14 @@ body {
   width: calc((100% - 72px) / 4);
 }
 .advantages-icons-list {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 264px;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--background-icons);
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 24px 100px;
   margin-bottom: 8px;
 }
 .advantages-icons {
@@ -305,16 +307,19 @@ body {
   justify-content: center;
   gap: 24px;
 }
+.social-list-item {
+  width: 40px;
+  height: 40px;
+}
 
 .social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   background-color: var(--logo-button-color);
   border-radius: 50%;
-
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -324,9 +329,6 @@ body {
 .social-list-icon {
   fill: var(--background-icons);
 }
-
-  
-  
 
 /* COSTUMERS */
 .costumers {
@@ -344,6 +346,10 @@ body {
   color: var(--header-text-color);
   margin-bottom: 72px;
 }
+.costumers-list-item {
+  width: 168px;
+  height: 88px;
+}
 
 .costumers-list {
   display: flex;
@@ -354,9 +360,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--companies-fill);
   border-radius: 4px;
-  padding: 16px 32px;
 }
 .costumers-list-icon {
   fill: var(--companies-fill);
@@ -370,7 +377,6 @@ body {
   fill: var(--active-btn-color);
 }
 
-
 /* FOOTER */
 .page-footer {
   background-color: var(--header-text-color);
@@ -379,8 +385,7 @@ body {
 }
 .footer-container {
   display: flex;
-  
- }
+}
 
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -424,15 +429,17 @@ body {
   justify-content: center;
   gap: 16px;
 }
-
 .footer-social-list-item {
+  width: 40px;
+  height: 40px;
 }
+
 .footer-social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   background-color: var(--logo-button-color);
   border-radius: 50%;
 }
@@ -441,7 +448,7 @@ body {
 }
 .footer-social-list-link:hover,
 .footer-social-list-link:focus {
-  background-color: var(--active-btn-color);
+  background-color: var(--background-item-footer);
 }
 
 /* PORTFOLiO */
@@ -476,7 +483,9 @@ body {
 .filter-btn:focus {
   background: var(--active-btn-color);
   color: var(--white-text-background);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--active-btn-color);
   border-radius: 4px;
 }
 .product-content {
@@ -511,9 +520,11 @@ body {
   flex-wrap: wrap;
   flex-basis: calc((100% - 48px) / 3);
 }
-.product-item:hover,
-.product-item:focus {
+.product-item-link {
+  display: block;
+}
+.product-item-link:hover,
+.product-item-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
